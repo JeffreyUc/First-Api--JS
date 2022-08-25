@@ -11,7 +11,7 @@ db.once('open', () => console.log('Connected to db'))
 
 app.use(express.json())
 
-const moviesRouter = require('./MovieList/movielist')
+const moviesRouter = require('./MovieLists/movielists')
 app.use('/movielist', moviesRouter)
 
 
